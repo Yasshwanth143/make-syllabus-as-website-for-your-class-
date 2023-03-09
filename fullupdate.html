@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                position: sticky;
+                
+            }
+         
+           
+            section{
+                position: relative;
+                width:100%;
+                min-height:100%;
+                padding:100px;
+                display: flex;
+                justify-items: center;
+                background-color: #333;
+                
+                
+                
+             
+            }
+            header{
+                position: absolute;
+                top: 40px;
+                left: 0;
+                margin-right:100px;
+                margin-left: 0;
+                width:100%;
+                padding: 30px 170px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            header ul{
+                
+                display:flex;
+                position: absolute;
+                top: 0;
+                left: 0;
+                
+                margin-left: 70px;
+                width:100%;
+                padding: 20px 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            header ul li{
+                list-style: none;
+                display:flex;
+                
+            }
+            header ul li a{
+                display:inline-block;
+                color: #333;
+                font-weight:400 ;
+                margin-left: 0;
+                text-decoration: none;
+            }
+        
+            .books .book{
+            position: relative;
+            margin-top: -65px;
+            margin-right: 70px;
+            top:180px;
+            left:5px;
+            width:250px;
+            height:340px;
+            background:#fff;
+            transform: rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+            box-shadow: -35px 35px 50px rgba(0,0,0,1);
+            transition:0.5s;
+            background-image: url("https://wallpapercave.com/dwp2x/wp7443157.jpg");
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,0,0,5);
+            justify-content: flex-end;
+
+        }
+        .books .book:hover{
+            transform: rotate(-39.5deg) skewX(10deg);
+            box-shadow: -35px 35px 50px rgba(0,0,0,0);
+
+        }
+       .books .book::before{
+            content: '';
+            width:30px;
+            height: 100%;
+            background: #3a4462;
+            position: absolute;
+            top: 0;
+            left:0;
+            transform: skewY(-45deg) translate(-30px,-15px);
+            box-shadow: inset -10px 0 20px rgba(0,0,0,2);
+        }
+        .books .book::after{
+            content: '';
+            width:100%;
+            height:30px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transform: skewX(-45deg) translate(15px,30px);
+           
+            
+        }
+        
+        
+        .content{
+            
+           position: absolute;
+           top:270px;
+            right:10px;
+            font-size: 23px;
+            font-weight: 600;
+            justify-content: space-between;
+            align-items: left;
+            max-width:400px;
+            height:30px;
+            z-index: 1;
+
+            
+
+        }
+        .content .textBox{
+            bottom:0;
+            right:0;
+        }
+        .content .textBox h2{
+            color:#333;
+            font-size:28px;
+            line-height: 1.4em;
+            font-weight: 00;
+        }
+        .content .textBox h2 span{
+            color:#017143;
+            font-size: 34px;
+            font-weight: 900;
+        }
+        .content .textBox {
+            color:#333;
+p
+        }
+        .content .textBox h2 span::before{
+                content: 'Computer Organization and Architecture ';
+                animation: animate infinite 20s;
+        
+            }
+            @keyframes animate
+            {
+                10%{
+                    content: 'Software Engineering ';
+                }
+                20%{
+                    content: 'Object Oriented Programming through Java';
+                }
+                30%{
+                    content: 'Operating Systems ';
+                }
+                40%{
+                    content: 'Probability and Statistics ';
+                }
+                50%{
+                    content: 'Object Oriented programming through Java LAB';
+                }
+                60%{
+                    content: 'Operating Systems LAB ';
+                }
+                70%{
+                    content: 'Software Engineering Lab ';
+                }
+                80%{
+                    content: 'R- Programming ';
+                }
+                85%{
+                    content: 'Employbility Skills-I';
+                }
+                90%{
+                    content: 'Data Communications';
+                }
+            }
+        .books {
+            display:flex;
+                position: absolute;
+                top: 70px;
+                left: 5px;
+                list-style-type: none;
+                margin-left:50px;
+                width:100%;
+                padding: 20px 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+               
+
+        }
+       .books ul li{
+                list-style: none;
+                display:flex;
+       }
+       .books .s1  {
+        position: relative;
+            
+            width:50px;
+            height:60px;
+            background:#fff;
+            transform: rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+            box-shadow: -35px 35px 50px rgba(0,0,0,1);
+            transition:0.5s;background-image: url("https://w7.pngwing.com/pngs/1007/368/png-transparent-coa-hd-logo.png    ");
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,0,0,5);
+            justify-content: flex-end;
+       }
+       .books .s1:hover{
+            transform: rotateZ(0deg) skewX(10deg);
+            box-shadow: -35px 35px 50px rgba(0,0,0,0);
+
+        }
+        .books .s1::before{
+            content: '';
+            width:8px;
+            height: 100%;
+            background: #8691b0;
+            position: absolute;
+            top: 0;
+            left:0;
+            transform: skewY(-45deg) translate(-8px,-4px);
+            box-shadow: inset -10px 0 20px rgba(0,0,0,3);
+        }
+        .books .s1::after{
+            content: '';
+            width:50px;
+            height:10px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transform: skewX(-45deg) translate(7px,11px);
+           
+            
+        }
+       .books .s2  {
+        position: relative;
+            
+            width:50px;
+            height:60px;
+            background:#fff;
+            transform: rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+            box-shadow: -35px 35px 50px rgba(0,0,0,1);
+            transition:0.5s;background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYWuziHQjkyhq3rpJ4O9U21-KxiT4MLV3HIx7foJsdNYF_m3MpTw3L2bAwwvwVUwcfI34&usqp=CAU");
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,0,0,5);
+            
+justify-content: flex-end;
+       }
+       .books .s2:hover{
+            transform: rotateZ(0deg) skewX(10deg);
+            box-shadow: -35px 35px 50px rgba(220, 240, 6, 0);
+
+        }
+        .books .s2::before{
+            content: '';
+            width:8px;
+            height: 100%;
+            background: #8691b0;
+            position: absolute;
+            top: 0;
+            left:0;
+            transform: skewY(-45deg) translate(-8px,-4px);
+            box-shadow: inset -10px 0 20px rgba(0,0,0,3);
+        }
+        .books .s2::after{
+            content: '';
+            width:50px;
+            height:10px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transform: skewX(-45deg) translate(7px,11px);
+           
+            
+        }
+      
+       
+       .books .s3 {
+        position: relative;
+            
+            width:50px;
+            height:60px;
+            background:#fff;
+            transform: rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+            box-shadow: -35px 35px 50px rgba(0,0,0,1);
+            transition:0.5s;background-image: url("https://www.analyticsinsight.net/wp-content/uploads/2022/09/Java-19-comes-with-an-open-source-twist-All-you-need-to-know.jpg");
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,0,0,5);
+            
+justify-content: flex-end;
+       }  
+       .books .s3:hover{
+            transform: rotateZ(0deg) skewX(10deg);
+            box-shadow: -35px 35px 50px rgba(220, 240, 6, 0);
+
+        }
+        .books .s3::before{
+            content: '';
+            width:8px;
+            height: 100%;
+            background: #8691b0;
+            position: absolute;
+            top: 0;
+            left:0;
+            transform: skewY(-45deg) translate(-8px,-4px);
+            box-shadow: inset -10px 0 20px rgba(0,0,0,3);
+        }
+        .books .s3::after{
+            content: '';
+            width:50px;
+            height:10px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transform: skewX(-45deg) translate(7px,11px);
+           
+            
+        }
+        .books .s4  {
+        position: relative;
+            
+            width:50px;
+            height:60px;
+            background:#fff;
+            transform: rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+            box-shadow: -35px 35px 50px rgba(0,0,0,1);
+            transition:0.5s;background-image: url("https://t3.ftcdn.net/jpg/03/02/36/94/360_F_302369420_BLRLfVGhZlZxpDIzW1WAjEH0qonp9IcA.jpg");
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,0,0,5);
+            
+justify-content: flex-end;
+       } 
+       .books .s4:hover{
+            transform: rotateZ(0deg) skewX(10deg);
+            box-shadow: -35px 35px 50px rgba(220, 240, 6, 0);
+
+        }
+        .books .s4::before{
+            content: '';
+            width:8px;
+            height: 100%;
+            background: #8691b0;
+            position: absolute;
+            top: 0;
+            left:0;
+            transform: skewY(-45deg) translate(-8px,-4px);
+            box-shadow: inset -10px 0 20px rgba(0,0,0,3);
+        }
+        .books .s4::after{
+            content: '';
+            width:50px;
+            height:10px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transform: skewX(-45deg) translate(7px,11px);
+           
+            
+        } 
+       .books .s5  {
+        position: relative;
+            
+            width:50px;
+            height:60px;
+            background:#fff;
+            transform: rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+            box-shadow: -35px 35px 50px rgba(0,0,0,1);
+            transition:0.5s;background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzJDyuug5rgayEQj0rHrm_VBiZ2oq_G29vcw&usqp=CAU");
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,0,0,5);
+            
+justify-content: flex-end;
+       }  
+       
+       .books .s5:hover{
+            transform: rotateZ(0deg) skewX(10deg);
+            box-shadow: -35px 35px 50px rgba(220, 240, 6, 0);
+
+        }
+        .books .s5::before{
+            content: '';
+            width:8px;
+            height: 100%;
+            background: #8691b0;
+            position: absolute;
+            top: 0;
+            left:0;
+            transform: skewY(-45deg) translate(-8px,-4px);
+            box-shadow: inset -10px 0 20px rgba(0,0,0,3);
+        }
+        .books .s5::after{
+            content: '';
+            width:50px;
+            height:10px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transform: skewX(-45deg) translate(7px,11px);
+           
+            
+        } 
+        .books .s6  {
+        position: relative;
+            
+            width:50px;
+            height:60px;
+            background:#fff;
+            transform: rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+            box-shadow: -35px 35px 50px rgba(0,0,0,1);
+            transition:0.5s;background-image: url("https://cdn.iconscout.com/icon/free/png-256/lab-room-board-school-nameplate-plate-study-1-21289.png");
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,0,0,5);
+            
+justify-content: flex-end;
+       } 
+       .books .s6:hover{
+            transform: rotateZ(0deg) skewX(10deg);
+            box-shadow: -35px 35px 50px rgba(220, 240, 6, 0);
+
+        }
+        .books .s6::before{
+            content: '';
+            width:8px;
+            height: 100%;
+            background: #8691b0;
+            position: absolute;
+            top: 0;
+            left:0;
+            transform: skewY(-45deg) translate(-8px,-4px);
+            box-shadow: inset -10px 0 20px rgba(0,0,0,3);
+        }
+        .books .s6::after{
+            content: '';
+            width:50px;
+            height:10px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transform: skewX(-45deg) translate(7px,11px);
+           
+            
+        } 
+       
+       .books .s7  {
+        position: relative;
+            
+            width:50px;
+            height:60px;
+            background:#fff;
+            transform: rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+            box-shadow: -35px 35px 50px rgba(0,0,0,1);
+            transition:0.5s;background-image: url("https://cdn.iconscout.com/icon/free/png-256/lab-room-board-school-nameplate-plate-study-1-21289.png");
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,0,0,5);
+            
+justify-content: flex-end;
+       } 
+       .books .s7:hover{
+            transform: rotateZ(0deg) skewX(10deg);
+            box-shadow: -35px 35px 50px rgba(220, 240, 6, 0);
+
+        }
+        .books .s7::before{
+            content: '';
+            width:8px;
+            height: 100%;
+            background: #8691b0;
+            position: absolute;
+            top: 0;
+            left:0;
+            transform: skewY(-45deg) translate(-8px,-4px);
+            box-shadow: inset -10px 0 20px rgba(0,0,0,3);
+        }
+        .books .s7::after{
+            content: '';
+            width:50px;
+            height:10px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transform: skewX(-45deg) translate(7px,11px);
+           
+            
+        } 
+       
+       .books .s8 {
+        position: relative;
+            
+            width:50px;
+            height:60px;
+            background:#fff;
+            transform: rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+            box-shadow: -35px 35px 50px rgba(0,0,0,1);
+            transition:0.5s;background-image: url("https://cdn.iconscout.com/icon/free/png-256/lab-room-board-school-nameplate-plate-study-1-21289.png");
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,0,0,5);
+            
+justify-content: flex-end;
+       }  
+       .books .s8:hover{
+            transform: rotateZ(0deg) skewX(10deg);
+            box-shadow: -35px 35px 50px rgba(220, 240, 6, 0);
+
+        }
+        .books .s8::before{
+            content: '';
+            width:8px;
+            height: 100%;
+            background: #8691b0;
+            position: absolute;
+            top: 0;
+            left:0;
+            transform: skewY(-45deg) translate(-8px,-4px);
+            box-shadow: inset -10px 0 20px rgba(0,0,0,3);
+        }
+        .books .s8::after{
+            content: '';
+            width:50px;
+            height:10px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transform: skewX(-45deg) translate(7px,11px);
+           
+            
+        } 
+       .books .s9  {
+        position: relative;
+            
+            width:50px;
+            height:60px;
+            background:#fff;
+            transform: rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+            box-shadow: -35px 35px 50px rgba(0,0,0,1);
+            transition:0.5s;background-image: url("https://cdn.iconscout.com/icon/free/png-256/lab-room-board-school-nameplate-plate-study-1-21289.png");
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,0,0,5);
+            
+justify-content: flex-end;
+       }
+       .books .s9:hover{
+            transform: rotateZ(0deg) skewX(10deg);
+            box-shadow: -35px 35px 50px rgba(220, 240, 6, 0);
+
+        }
+        .books .s9::before{
+            content: '';
+            width:8px;
+            height: 100%;
+            background: #8691b0;
+            position: absolute;
+            top: 0;
+            left:0;
+            transform: skewY(-45deg) translate(-8px,-4px);
+            box-shadow: inset -10px 0 20px rgba(0,0,0,3);
+        }
+        .books .s9::after{
+            content: '';
+            width:50px;
+            height:10px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transform: skewX(-45deg) translate(7px,11px);
+           
+        } 
+        .book{
+            position: relative;
+            margin-top: -65px;
+            margin-right: 70px;
+            top:120px;
+            width:250px;
+            height:340px;
+            background:#fff;
+            transform: rotate(-37.5deg) skewX(10deg) translate(20px,-20px);
+            box-shadow: -35px 35px 50px rgba(0,0,0,1);
+            transition:0.5s;
+            background-image: url("https://wallpapercave.com/dwp2x/wp7443157.jpg");
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0,0,0,5);
+            justify-content: flex-end;
+
+        }
+        .book:hover{
+            transform: rotate(-39.5deg) skewX(10deg);
+            box-shadow: -35px 35px 50px rgba(0,0,0,0);
+
+        }
+        .book::before{
+            content: '';
+            width:30px;
+            height: 100%;
+            background: #3a4462;
+            position: absolute;
+            top: 0;
+            left:0;
+            transform: skewY(-45deg) translate(-30px,-15px);
+            box-shadow: inset -10px 0 20px rgba(0,0,0,2);
+        }
+        .book::after{
+            content: '';
+            width:100%;
+            height:30px;
+            background: #ccc;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transform: skewX(-45deg) translate(15px,30px);
+           
+            
+        }
+        .card{
+        
+            position: relative;
+            width:450px;
+            height:6000px;
+            border-radius:20px;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            transition: 0.5px;
+        font-weight: bolder;
+        font-size: 23px;
+            top:350px;
+            left: 70px;
+            z-index: -2;
+            color:#333;
+            padding: 10px;
+            
+            
+
+     }
+     .card h2,h1,h3{
+        color: #017143;
+        font-weight: bold;
+     }
+     .card .center{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height: 100%;
+        border-radius: 20px;
+                overflow: hidden;
+     }
+     .card .center::before{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        
+        transition: 0.5s;
+     }
+     
+   
+    
+     footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin-right: 0;
+  margin-left: 0;
+  width:1200px;
+}
+
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+footer a:hover {
+  border-bottom: none;
+}
+
+footer p:last-child {
+  margin-top: 10px;
+  font-size: 12px;
+}
+/* CSS for digital footer on Android mobiles */
+@media only screen and (max-width: 480px) {
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 23px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 200%;
+    left: 40px;
+  }
+
+  .footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer p {
+    margin-bottom: 10px;
+    font-size: 100px;
+    font-weight: bold;
+  }
+
+  .footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer li {
+    margin: 0 10px;
+  }
+
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  .footer a:hover {
+    border-bottom: none;
+  }
+
+  .footer p:last-child {
+    margin-top: 10px;
+    font-size: 70px;
+  }
+}
+
+/* CSS for larger screens */
+@media only screen and (min-width: 481px) {
+  .footer {
+    display: none;
+  }
+}
+
+        
+       
+
+        
+       
+      
+       
+       
+        
+
+        </style>
+    </head>
+    <body>
+
+          <header>
+                 <a href="#" class="logo"><img src=""></a>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">biometric</a></li>
+                        <li><a href="#">contact Us</a></li>
+                    
+                     </ul>
+        
+            </header>
+    <div class="content">
+         <div class="textBox">
+             <h2>This website consists with CSE-B Syllabus.<br>Subjects mentioned <span></span> </h2>
+             <p>A syllabus a requisite document for teaching in that it serves to outline the basic elements of a course including what topics will be covered, 
+                a weekly schedule, and a list of tests, assignments, and their associated weightings.</p>
+         </div>
+    </div>
+ <!-- HTML code -->
+<!-- HTML code -->
+<!-- HTML code -->
+<div>
+    <div class="books" id="books">
+      <div class="book" id="book"></div>
+      <div class="s1" id="s1"></div>
+      <div class="s2" id="s2"></div>
+      <div class="s3" id="s3"></div>
+      <div class="s4" id="s4"></div>
+      <div class="s5" id="s5"></div>
+      <div class="s6" id="s6"></div>
+      <div class="s7" id="s7"></div>
+      <div class="s8" id="s8"></div>
+      <div class="s9" id="s9"></div>
+    </div>
+      
+    <div class="syllabus"><span class="syl"></span></div>
+  
+    <div class="card">
+      <div class="center">
+        <div>
+          <div class="coa" style="display: none;"> 
+            
+           <p class="cl">
+            
+            <h1>Computer Organization and Architecture </h1>
+            <h3>Course Objectives:</h3>
+            <li> Understand the architecture of a modern computer with its various processing units. </li>
+            <li>Also the Performance measurement of the computer system. </li>
+            <li>In addition to this the memory management system ofcomputer.</li>
+            <h3>Course Outcomes:</h3>
+            <li>Identify the Architecture of modern computer.</li>
+            <li>Measure the performance of a computer.</li>
+            <li>Explain different instruction types, addressing modes </li>
+            <li>Demonstrate the concepts of interrupts and memory accessing methods.</li>
+            <li>Illustrate different memory types and the functions of control unit</li>
+            <h2>UNIT -I</h2>
+            <p><h3>Basic Structure of Computers:</h3> Functional unit, Basic Operational concepts, Bus structures,
+                System Software, Performance, The history of computer development.
+                Learning Outcomes:
+                At the end of this unit, students will be able to
+                <li>
+                1. acquire the knowledge on basic structure of a computer [L2]</li>
+                <li>2. analyze the performance of a computer system [L4]</li>
+                <h3>Applications:</h3>
+                <li>design application program interface of a system </li>
+                </p>
+        <h2>UNIT -II</h2>
+        <p><h3>Machine Instruction and Programs: </h3>Instruction and Instruction Sequencing: Register Transfer
+            Notation, Assembly Language Notation, Basic Instruction Types, Addressing Modes, Basic
+            Input/output Operations, The role of Stacks and Queues in computer programming equation</p>
+        <h3>Learning Outcomes:</h3>
+        <p>
+            At the end of this unit, students will be able to
+    <li>1. create the assembly level programs [L6]</li>
+    <li>2. acquire knowledge on register transfer notations [L2]</li>
+    <li>3. analyze the role of a stack in real time programs [L5] </li>
+    <h3>Applications:</h3>
+    <li>develop a micro level assembly program for high level languages</li>
+    <li> design programs using stacks and queues </li>
+        </p>
+        <p>
+            <h2>UNIT -III:</h2>
+            <h3>Type of Instructions:</h3> Component of Instructions: Logic Instructions, shift and Rotate Instructions,
+            Arithmetic Instructions, Branch Instructions, Addressing Modes, Input/output Operations
+            <h3>Learning Outcomes:</h3>
+            At the end of this unit, students will be able to
+            <li> Apply logical and shift instructions towards arithmetic operations [L3]</li>
+            <li>analyze the branch and jump instructions [L5]</li>
+            <li> analyze addressing mode of a specific instruction [L4]</li>
+           <h3> Applications:</h3>
+            <li>design branch instructions using assembly level language</li></p>
+        <p>
+            <h2>UNIT -IV:</h2>
+           <h3> Input/Output Organization:</h3> Accessing I/O Devices, Interrupts: Interrupt Hardware, Enabling and
+            Disabling Interrupts, Handling Multiple Devices, Direct Memory Access, Buses: Synchronous Bus,
+            Asynchronous Bus, Interface Circuits, Standard I/O Interface: Peripheral Component Interconnect
+            (PCI) Bus, Universal Serial Bus (USB)
+            <h3>Learning Outcomes:</h3>
+            At the end of this unit, students will be able to
+            <li> analyze the interrupts, synchronous and asynchronous busses [L4]</li>
+            <li>apply data transfer techniques [l3]</li>
+            <li>explain I/O interfaces[L2]</li>
+            <h3>Applications:</h3>
+            <li> develop interrupt programs for enabling input/ output interface</li> </p>
+        <p>
+            <h2>UNIT -V: </h2>
+            <h3>The Memory Systems:</h3> Basic memory circuits, Memory System Consideration, ReadOnly
+    Memory: ROM, PROM, EPROM, EEPROM, Flash Memory, Cache Memories: Mapping
+    Functions, INTERLEAVING. <h3>Secondary Storage:</h3> Magnetic Hard Disks, Optical Disks
+    <h3>Processing Unit:</h3> Fundamental Concepts: Register Transfers, Performing An Arithmetic Or Logic
+    Operation, Fetching A Word From Memory, Execution of Complete Instruction, Hardwired
+    Control,<h3> Micro programmed Control:</h3> Microinstructions, Microprogram Sequencing, Wide
+    Branch Addressing Microinstructions with next ñAddress Field
+    <h3>Learning Outcomes:</h3>
+    Students will be able to
+    <li> Analyze the difference between the functionality of RAM and ROM [L2]</li>
+    <li>Apply cache organization and different mapping techniques [L3]</li>
+    <li>Analyze the performance of different cache organizations in computer system [L2]</li>
+    <li>Acquire knowledge on how execution of an instruction [L2]</li>
+    <li>Analyze different types of control unit designs [L2]</li>
+    <li>Create a small micro-program to perform a specific task [L6]</li>
+    <h3>Applications:</h3>
+    <li>design a cache level programs for different mapping techniques</li>
+    <li> designing of a micro architecture</li>
+    <li> designing of an instruction level architecture </li>
+    
+        </p>
+           </p></div>
+
+
+
+
+          <div class="se" style="display: none;">
+            
+            
+            
+            <h1>Software Engineering </h1>
+            <p><h3>Course Objectives:</h3>
+                <li>> Explain the phases of Software Development</lsi>>
+                <li>> Teach the customer requirement gathering technique</li>
+                <li>> Teach Software Design techniques
+                <li>> Demonstrate coding standards
+                <li>> Apply the testing techniques on software
+                <h3>Course outcomes:</h3>
+                Students will be able to:
+                <li>> Understand the need of Software Life Cycle Models (L1)</li>
+                <li>> Demonstrate the Requirements of the Software Systems process (L2)</li>
+                <li>> Summarize the system models of software engineering (L2)</li>
+                <li>> Choose appropriate software architecture style for real-time software projects (L3)</li>
+                <li>> Analyze various testing techniques, Risk management and Software quality of the software
+                products(L4) </li></p>
+                <p>
+                    <h2>UNIT-1</h2>
+<h3>Introduction:</h3> to Software Engineering, Evolving role of Software, Software
+Crisis,Changing Nature of Software, Software myths, Process Models for Software Development,
+Waterfall, prototyping Evolutionary models: Incremental model, Spiral model, Agile
+developmental process.
+<h3>Applications:</h3> Various models for different projects
+<h3>Learning Outcomes:</h3>
+At the end of the module, students will be able to:
+<li> List the steps involved in software development</li> 
+<li> Explain myths of software</li> 
+<li> Apply various software process models </li>
+
+<h3>UNIT-2</h3>
+<h3>Software Requirements Engineering:</h3> Functional & Non-functional requirements, Feasibility
+studies, Requirements Elicitation and Analysis, requirements validation, Software Requirements
+Specification, Process and System Models, context models, behavioural model, Data model.
+<h3>Applications:</h3> Finding Functional &Non-functional requirements for banking system
+<h3>Learning Outcomes:</h3>
+At the end of the module, students will be able to:
+<li> Explain software development model (L2)</li>
+<li>Define functional and non-functional requirements for software development (L1)</li>
+<li>Analyse user requirementsfor a software(L4)</li>
+<h3>UNIT-3</h3>
+<h3>Design Engineering:</h3> Design concepts, data design, software architecture, Architectural styles and
+patterns, User interface design - Golden rules, User interface analysis and design, Effective
+Modular Design.
+<h3>Applications:</h3> Data designing for banking system
+Learning Outcomes:
+At the end of the module, students will be able to:
+<li> List the software architecture style for the given problem. (L1)</li>
+<li> BuildGoldenrulesfor the given problem (L3)</li>
+<li>User Interface Analysis and Design (L5)</li>
+<h2>UNIT-4</h2>
+<h3>Coding&Testing:</h3> standards, code review and verification, Testing levels: Unit testing,
+integration testing, system testing ñ alpha and beta testing, black box and white box testing,
+debugging.
+<h3>Applications:</h3> Applyingtesting techniques on any software project
+<h3>Learning Outcomes:</h3>
+At the end of the module, students will be able to:
+<li>Implementation of coding standards(L6)</li>
+<li>Apply different Testing concepts (L3)   </li> 
+<h2>UNIT-5</h2>
+<h3>Risk Management:</h3> Risk types, strategies, Estimation and Planning. Software Quality ñMcCall
+Quality factors, Six Sigma for Software Quality, Quality Assurance and its techniques.
+<h3>Applications:</h3> analyze the risks in any software project
+<h3>Learning Outcomes:</h3>
+At the end of the module, students will be able to:
+<li>
+ Evaluatedifferent Risk management techniques. (L5)</li>
+<h3>Text books:</h3>
+<li>
+ Roger S. Pressman, Software Engineering, A practitionerís Approach, 7thEdition, McGrawHill International Edition, 2009</li>
+<li>
+Rajib Mal, Fundamentals of software Engineering, 3rdEdition, Eastern Economy Edition,
+2009</li>
+<h3>Reference books:</h3>
+<li> Sommerville, Software Engineering, 7thEdition, Pearson education, 2004</li>
+<li>
+K KAggarwal and Yogeshsingh, Software engineering,3rd Edition,New age International
+publication,2008</li>  </p>
+
+
+
+</div>
+         
+<div class="Java" style="display: none;">
+    
+    
+    
+    <h1>Object Oriented Programming through Java </h1>
+            <h3>Course Objectives:</h3>
+            <li>To understand the structure and environment of Java.</li>
+            <li>To implement the relationship between objects.</li>
+            <li>To apply data hiding strategy in objects.</li>
+            <li>To implement text processing and error handling.</li>
+            <li>To organize data using different data structures.</li>
+            <li>To create multi threaded graphical user interface applications.</li>
+           <h3> Course Outcomes:</h3>
+            <li>Understand the environment of JRE and Control Statements.</li>
+            <li>Implement real world objects using class Hierarchy.</li>
+            <li>Implement generic data structures for iterating distinct objects.</li>
+            <li>Implement error handling through exceptions and file handling through streams.</li>
+            <li>Design thread-safe GUI applications for data communication between objects.</li>
+            <h2>Unit I:</h2>
+            <h3>Java Environment and Program Structure:</h3> of Java, Features, Applications, Java
+            Installation - JDK and JRE, JVM Architecture, OOPS Principles, Class and Object, Naming
+            Convention, Data Types, Type Casting, Type Conversion, Wrapper classes, Operators, instance of
+            operator, Command Line Arguments, Decision making, Arrays, and Looping statements.
+            <h3>Learning Outcomes:</h3> Student will be able to
+            <li> Understand architecture of Java Virtual Machine.(L2)</li>
+            <li>Understand the structure of java program and its environment. (L2)</li>
+           <h2> Unit II:</h2>
+            <h3>Class Hierarchy & Data Hiding:</h3> Property, Method, Constructor, Inheritance (IS-A) , Aggregation
+            and Composition (HAS-A), this and super, static and initialize blocks, Method overloading and
+            overriding, static and final keywords, Types of Inheritance, Compile time and Runtime
+            Polymorphism, Access Specifiers and scope, packages and access modifiers, Abstract class,
+            Interface, Interface Inheritance, Achieving Multiple Inheritance, Class casting, Object Cloning,
+            Inner Classes.
+            <h3>Learning Outcomes:</h3> Student will be able to
+            <li>Understand the class hierarchy and their scop(L2)</li>
+            <li>Implement relationship between object(L3)</li>
+            <li>Understand data hiding and nested classe(L2)</li>
+            <li>Implement data type casting and cloning of objects. (L3)</li>
+           <h2> Unit III:</h2>
+            <h3>Strings and Collections:</h3> <h3>String:</h3> Methods,StringBuffer and StringBuilder, StringTokenizer,
+            <h3>Collections:</h3> Exploring java.util.*, Scanner, Iterable, Collection Hierarchy, Set, List, Queue and
+            Map, Comparable and Comparator, Iterators: foreach, Enumeration, Iterator and ListIterator.
+           <h3>Learning Outcomes:</h3> Student will be able to
+            <li> Understand the usage of String and its properties and methods.(L2)</li>
+            <li> Understand data structures and Iterators. (L2)</li>
+            <li>Create the data structures and implement different utility classes. (L3)</li>
+            <h2>Unit IV:</h2>
+            <h3>IO and Error Handling: </h3><h3> Streams: </h3> java.io.*, Character and Byte Streams, Reading
+            and Writing, Serialization and De-serialization,
+            <h3>Error Handling:</h3> Error vs Exception, Exception hierarchy, Types of Exception, Exception
+            handlers, User defined exception, Exception propagation.
+            <h3>Learning Outcomes:</h3> Student will be able to
+            <li>Understand character and byte streams. (L2)</li>
+            <li>Understand the hierarchy of errors and exceptions. (L2)</li>
+          <li>Implement data streams and exception handlers. (L3)</li>
+            
+          <h2>Unit V:</h2>
+          <h3>Threads and GUI:</h3> Multi Threading: Process vs Thread, Thread Life Cycle, Thread class and
+          Runnable Interface, Thread synchronization and communication.
+          <h3>GUI: </h3>Component, Container, Applet, Applet Life Cycle, Event delegation model, Layouts, Menu,
+          MenuBar, MenuItem.
+          <h3></h3> Outcomes: Student will be able to
+          <li> Understand the Thread Life Cycle and its scheduling.(L2)</li>
+          <li> Implement the synchronization of threads</li> 
+          <li> Create graphical components using Abstract window toolkit(L3)</li>
+          <h3>Text Books:</h3>
+          <li> The complete Reference Java, 8th edition, Herbert Schildt, TMH.</li>
+          <li> Programming in JAVA, Sachin Malhotra, SaurabhChoudary, Oxford.</li>
+          <li> Introduction to java programming, 7th edition by Y Daniel Liang, Pearson.</li>
+          <li> Java: How to Program, 9th Edition (Deitel) 9th Edition.</li>
+          <li> Core Java: An Integrated Approach, Java 8 by R Nageswara Rao.</li>
+          <h3>Reference Books:</h3>
+          <li> Swing: Introduction, JFrame, JApplet, JPanel, Componets in Swings, Layout Managers in</li>
+          <li> Swings, JList and JScrollPane, Split Pane, JTabbedPane, JTree, JTable, Dialog Box. </li>
+</div>
+          <div class="os" style="display: none;"><h1>Operating Systems</h1>
+            <h3>Course objectives:</h3>
+            <li> Provide knowledge about the services rendered by operating system</li>
+            <li> Present detail discussion on processes, threads and scheduling algorithm</li>>
+            <li> Expose the student with different techniques of handling deadlock</li>
+            <li> Discuss various file-system implementation issues and memory management technique</li>li>
+            <li> Learn the basics of Linux system and Android Software Platfor</li>
+            <h3>Course Outcomes:</h3>
+            <li> Understand the importance of operating systems and different types of system calls(L2</li>
+            <li> Analyze process scheduling algorithms and various IPC mechanism(L4</li>
+            <li> Understand the process synchronization, different ways for deadlocks handlin(L2</li>
+            <li> Analyze different page replacement methods, various File management technique</li> 
+             <li> Understand Android environment and behavior (L2<li>
+            <h2>UNIT-I:</h2>
+           <h3> Operating Systems Overview:</h3> Introduction: what is an operating system,Types of operating
+            systems, operating systems concepts, operating systems services, Introduction to System call,
+            System call types. Operating System Generation
+            <h3>Learning outcomes:</h3> Student should be able to
+            <li>Understand operating system structure and functions. (L2).</li>
+            <li> operating system services and system calls (L2).</li>
+            <h2>UNIT–II:</h2>
+            <h3>Process Management:Process concept:</h3> Process Concept, Process Scheduling, Operations on
+            Processes, Inter process Communication.
+            <h3>Programming: </h3>, Multithreading models, Threading Issues.
+            Process scheduling:Basic Concepts, Scheduling Criteria, Scheduling Algorithms.
+            Learning outcomes: Student should be able to
+            <li> Identify various message sharing mechanisms used in IPC. (L2).</li>
+            <li> Understand how to handling multiple threads. (L2).</li>
+        <li> Differentiate between preemptive, non-preemptive and real time CPU scheduling
+            (L2).</li>
+            <h3>UNIT-III:</h3>
+            <h3>Synchronization:</h3> Synchronization,The Critical-Section Problem, Synchronization
+            Hardware, Semaphores, Classic Problems of Synchronization, Monitors, Synchronization examples
+            Principles of deadlock ñ System Model, Deadlock Characterization, Deadlock
+            Prevention,Detection and Avoidance, Recovery form Deadlock
+            <h3>Learning outcomes:</h3> should be able to
+            <li> Analyze various solutions for process synchronization. (L4).</li>
+            <li>Analyze the reasons for deadlocks and proposed solutions to detect, avoid, recovery
+            from deadlocks.(L4).</li>
+            <h2>UNIT-IV:</h2>
+           <h3> Memory Management:</h3> Memory Managementstrategies:Swapping, Contiguous Memory
+            Allocation, Segmentation, Paging, Structure of the Page Table.
+            <h3>Virtual Memory Management:</h3> Memory, Demand Paging, Page-Replacement Algorithms,
+            Thrashing..
+            Learning outcomes: Student should be able to
+            <li> Demonstrate the ability to implement various memory management techniques (L2)</li>
+            <li> Illustrate various demand paging techniques. (L2). </li>
+            <h2>UNIT-V:</h2>
+            File system Interface- the concept of a file, Access Methods, Directory and Disk structure, File
+            system mounting.
+            <h3>File System implementation:</h3> File system structure, allocation methods, free-space management
+           <h3>Mass-storage structure:</h3> of Mass-storage structure, Disk scheduling, Device drivers 
+           Android Software Platform: Android Architecture, Operating System Services, Android Runtime
+           Application Development, Application Structure, Application Process management.
+           <h3>Learning outcomes: </h3> should be able to
+           <li>Identify various file management and optimization technique</li>(L2).
+           <li>Understand how data streams are exchanged between I\O subsystems.(L2).</li>
+           <li>Analyze various storage structures to store the data in secondary memor</li>(L4).
+           <li>Analyze different disk scheduling algorithm</li>(L4).
+           <li>Understand Android operating system environmen</li>(L2).
+           <h3>Text Books:</h3>
+           <li>Silberschatz A, Galvin P B, and Gagne G, Operating System Concepts, 9th edition, Wiley, 2013.</li>
+           <li>Tanenbaum A S, Modern Operating Systems, 3rd edition, Pearson Education, 2008.</li>
+           (forInterprocess Communication and File systems).</li>
+           <h3>References:</h3>
+           <li>Tanenbaum A S, Woodhull A S, Operating Systems Design and Implementation, 3rd edition,
+           PHI, 2006.</li>
+           <li>Dhamdhere D M, Operating Systems A Concept Based Approach, 3rd edition, Tata McGrawHill, 2012.</li>
+           <li>Stallings W, Operating Systems -Internals and Design Principles, 6th edition, Pearson
+           Education, 2009.</li>
+           <li>Nutt G, Operating Systems, 3rd edition, Pearson Education, 2004. </li></p></div>
+          <div class="ps" style="display: none;"><h1>Problem Solving and Programming</h1>
+            <h2>Course Objectives:</h2>
+<ol>
+  <li>To familiarize the data Science concepts.</li>
+  <li>To impart knowledge in basic concepts and few techniques in probability and statistics in relation to the engineering applications.</li>
+</ol>
+<h2>Course Outcomes:</h2>
+<p>At the end of the course, the students will be able to:</p>
+<ol>
+  <li>Evaluate correlation and regression for the given data.(L2)</li>
+  <li>Apply Bayeís theoremto probabilistic experiments.(L3)</li>
+  <li>Apply discrete and continuous probability distributions to the real time problems.(L3)</li>
+  <li>Design the components of a classical hypothesis test.(L3)</li>
+  <li>Infer the statistical inferential methods based on small sampling tests. (L3)</li>
+</ol>
+<h2>Unit I:</h2>
+<h3>Correlation and Regression:</h3>
+<p>Correlation, correlation coefficient, rank correlation. Linear regression coefficients, principle of least squares, method of least squares, regression lines, multiple regression, Logistic regression.</p>
+<p>Learning Outcomes:</p>
+<ul>
+  <li>Understand the various methods of central tendency and variability.(L2)</li>
+  <li>Evaluate correlation, correlation coefficient, rank correlation. (L2)</li>
+  <li>Apply method of least squares to find regression coefficients. (L3)</li>
+</ul>
+<h2>Unit II:</h2>
+<h3>Probability:</h3>
+<p>Probability, probability axioms, addition law and multiplicative law of probability, conditional probability, Bayeís theorem.</p>
+<p>Learning Outcomes:</p>
+<ul>
+  <li>Make use of probabilities of events in finite sample spaces from experiments. (L3)</li>
+  <li>Apply Bayeís theorem to real time problems. (L3)</li>
+</ul>
+<h2>Unit III:</h2>
+<h3>Random Variables & Probability Distributions:</h3>
+<p>Random variables (discrete and continuous), probability density functions, properties, mathematical expectation. Probability distribution - Binomial, Poisson distribution and normal distribution-their properties.</p>
+<p>Learning Outcomes:</p>
+<ul>
+  <li>Find the binomial, Poisson and normal distribution of the given data data. (L2)</li>
+</ul>
+<h2>Unit IV:</h2>
+<h3>Estimation and Testing of hypothesis, large sample tests:</h3>
+<p>Introduction to Sampling, parameters, statistics, sampling distribution, point estimation, interval estimations, null hypothesis, alternative hypothesis, the critical &amp; acceptance regions, level of significance, type-1 and type-2 of errors. Large Sample Tests: Test for single proportion, difference of proportions, test for single mean and difference of means, confidence interval for parameters in one sample and two sample problems.</p>
+<p>Learning Outcomes:</p>
+<ul>
+  <li>Explain the concept of estimation, interval estimation and confidence intervals. (L2)</li>
+  <li>Apply the concept of hypothesis testing for large samples. (L4)</li>
+</ul>
+<h2>Unit V:</h2>
+<h3>Small sample tests:</h3>
+<p>Student t-distribution (test for single mean, two means and paired t-test), testing of equality of variances (F-test), 2 - test for Single varience, 2 - test for goodness of fit, ANOVA(1-way).</p>
+<p>Learning Outcomes:</p>
+<ul>
+    <li>Estimate the goodness of fit. (L3)</li>
+    <li>Apply ANOVA test to compare the data. (L3)</li>
+    </ul>
+    <h3>Text Books:</h3>
+    <ol>
+    <li>Veerarajan T., Probability, Statistics and Random Processes, 3rd edition, Tata McGraw-Hill, New Delhi, 2008.</li>
+    <li>B.S. Grewal, Higher Engineering Mathematics, Khanna Publishers, 44/e, 2017.</li>
+    <li>Miller and John E. Freund, Probability &amp; Statistics for Engineers, Prentice Hall of India.</li>
+    </ol>
+    <h3>References:</h3>
+    <ol>
+    <li>N.P. Bali and Manish Goyal, A text book of Engineering Mathematics, Laxmi Publications, 2008.</li>
+    <li>T. K. V. Iyengar, B. Krishna Gandhi and Others, Probability &amp; Statistics, S. Chand &amp; Company.</li>
+    <li>S. C. Guptha and V. K. Kapoor, Fundamentals of Mathematical Statistics, 11/e, Sultan Chand and Sons Publications, 2012.</li>
+    <li>Sheldon M. Ross, Introduction to Probability and Statistics for Engineers and Scientists, Academic Press, 2009.</li>
+    <li>Ronald E. Walpole, Sharon L. Myers, Keying Ye, Probability and Statistics for Engineers and Scientists, Pearson, 2007.</li>
+    <li>Ravichandran, Probability and Statistics for Engineers, Wiley, 2019.</li>
+    </ol>
+    <h3>Learning Outcomes:</h3>
+    <ul>
+    <li>Apply the concept of testing hypothesis for small samples to draw the inferences. (L3)</li>
+    </ul>
+    
+    
+    
+        
+</div>
+         
+
+
+
+            <div class="lab1" style="display: none;">
+                
+                
+                <h1>java lab</h1>
+            <h2>Course Objectives:</h2>
+            <ul>
+            <li>To understand the structure and environment of Java.</li>
+            <li>To implement the relationship between objects.</li>
+            <li>To apply data hiding strategy in objects.</li>
+            <li>To implement text processing and error handling.</li>
+            <li>To organize data using different data structures.</li>
+            <li>To create multi threaded graphical user interface applications.</li>
+            </ul>
+            <h2>Course Outcomes:</h2>
+            <ol>
+            <li>Create classes and objects for real world entities.</li>
+            <li>Implement polymorphic and abstract behaviour in objects.</li>
+            <li>Implement the parent-child relationships between objects with access protection.</li>
+            <li>Create exceptions for handling runtime errors during text processing.</li>
+            <li>Implement generic data structures for iterating distinct objects.</li>
+            </ol>
+            <h2>Exercise-1:</h2>
+            <ol>
+            <li>
+            <p>Write a Java program to create Class as Registration with properties as Full Name(String), Gender(char), Age(int), Height(double), Phone Number(long), and isMarried(Boolean) and print their values.</p>
+            </li>
+            <li>
+            <p>Write a Java program to implement Type Casting and Conversion.</p>
+            </li>
+            <li>
+            <p>Write a Java program to implement Wrapper Classes.</p>
+            </li>
+            </ol>
+            <h2>Exercise-2:</h2>
+            <ol>
+            <li>
+            <p>Write a Java program to take input as Regd.No and print the branch depending upon the department code in that Regd.No using else-if and switch statements. (EgRegNo: 19KD1A0505, 8th character is department Code, 5-CSE, 4-ECE, 3-MECH, 2-EEE etc.</p>
+            </li>
+            <li>
+            <p>Write a Java program to read input integers from Command Line Arguments and print first and second largest numbers.</p>
+            </li>
+            <li>
+            <p>Write a Java program to take input as Integer array and print even indexed even numbers and odd indexed odd numbers.</p>
+            </li>
+            </ol>
+            <h2>Exercise-3:</h2>
+            <ol>
+            <li>
+            <p>Write a Java program to take input as Decimal number and convert into Roman Number.</p>
+            </li>
+            <li>
+            <p>Write a Java program to check whether given number is Extension number. The extension number is the number which is present in the last digit(s) of its square.(Eg. N=25, 625 is Extension number since it contains 25).</p>
+            </li>
+            <li>
+            <p>Write a Java program to take input as Amount in rupees and print their denominations and total number notes.</p>
+            </li>
+            </ol>
+            <h2>Exercise-4:</h2>
+            <ol>
+            <li>
+            <p>Create a Class named Student with properties as Student Id, Student Name, gender, department, Age, Aggregate and methods as insertStudent() for inserting student details and displayStudent() for printing student details.</p>
+            </li>
+            <li>
+            <p>Create a class Student with same properties as above and create a constructor to insert student details and return the data using toString() method.</p>
+            </li>
+            </ol>
+            <h2>Exercise-5:</h2>
+            <ol>
+            <li>
+            <p>Design a Class named Transaction to transfer amount (double) in different ways using Account Number(int), Phone Number(Long) and qr Code (String) as parameter into a method transferAmount() to achieve Method or Constructor OverLoading.</p>
+            </li>
+            <li>
+            <p>Design a super Class Account and sub Classes as LoanAccount, SavingsAccount and CurrentAccount and implement relationship between parent and child classes. (Implement Packages for the above classes)</p>
+            </li>
+            <h3>Exercise-6:</h3>
+<p>a. Write a Java program to implement <code>this</code> and <code>super</code> keywords.</p>
+<p>b. Write a Java program to implement Static property, method, block and package.</p>
+            <h3>Exercise-7:</h3>
+<p>a. Write a Java program to implement Data Abstraction using Abstract class and Interface.</p>
+<p>b. Write a Java program to implement Multiple Inheritance through Interfaces.</p>
+<h3>Exercise-8:</h3>
+<p>a. Write a Java program to take input as String Sentence S and print largest and shortest word in S.</p>
+<p>b. Write a Java program to take input as String S and remove the consecutive repeated characters from S. (Eg. S = Raaaamaaa then, Rama)</p>
+<p>c. Write a Java program to take input as String Sentence S and print sentence again with all the words with the first letter as capital letter using StringBuffer.</p>
+<h3>Exercise-9:</h3>
+<p>a. Write a Java program to implement Map interface.</p>
+<p>b. Write a Java program to implement Set Interface.</p>
+<p>c. Write a Java program to implement List Interface.</p>
+<p>d. Write a Java program to implement ComparatorInterface.</p>
+<h3>Exercise-10:</h3>
+<p>a. Write a Java program to read data from Employee file and print Highest salary employee information. (Employee File Contains: ID, name, Dept, Salary).</p>
+<p>b. Write a Java program to implements Serializable Interface to read and write Objects to/from the file.</p>
+<h3>Exercise-11:</h3>
+<p>a. Write a Java program to implement try, catch, finally blocks.</p>
+<p>b. Write a Java program to create user defined Exception and implement throw and throws handlers.</p>
+<h3>Exercise-12:</h3>
+<p>a. Write a Java program to create Thread using Thread Class and Runnable Interface.</p>
+<p>b. Write a Java program to implement multi threading and synchronization.</p>
+<p>c. Write a Java program to implement Inter Thread Communication.</p>
+<h3>Exercise-13:</h3>
+<p>a. Create an Applet that changes the Font and background Color depending upon the user selection from the input.</p>
+<p>b. Write a Java program to implement Event Delegation model through AWT Components.</p>
+<p>c. Write a Java program to implement Layout Manager with AWT components.</p>
+
+
+
+        
+        
+        
+        </div>
+          <div class="lab2" style="display: none;">
+            
+            
+            <h2>SE</h2>
+            <h1>Course Objectives:</h1>
+            <ul>
+              <li>Students can be familiar with analysis in software engineering process.</li>
+              <li>Students can be familiar with Designing in software development process.</li>
+              <li>The Software Engineering lab will facilitate the students to develop a preliminary yet practical understanding of software development process and tools.</li>
+            </ul>
+            <h1>Course Outcomes:</h1>
+            <ol>
+              <li>Designing the requirement document.</li>
+              <li>Design the application using Object Oriented Concepts.</li>
+              <li>Designing of Ad-hoc Test Cases.</li>
+              <li>Understanding the application at the analysis and maintenance stages.</li>
+            </ol>
+            <h1>Experiments:</h1>
+            <p>Do the Following Exercises by choosing any one of the application.</p>
+            <ol>
+              <li>Do the Requirement Analysis and Prepare SRS</li>
+              <li>Draw the Entity Relation Diagram.</li>
+              <li>Draw the Data Flow Diagrams at Level 0 & Level 1</li>
+              <li>Draw the Control Flow Diagram</li>
+              <li>Draw the Structured Charts for the developed DFD’s</li>
+              <li>Design the Test Cases for the application</li>
+              <li>Analyze the Risk related to the project and prepare RMMM plan</li>
+              <li>Prepare Version control and change control for software configuration items.</li>
+            </ol>
+            
+            
+            </div>
+         
+         
+            <div class="lab3" style="display: none;">
+                
+                
+                <h1>Operating Systems LAB</h1>
+        
+        
+            <h2>Course objectives:</h2>
+            <ul>
+              <li>To gain knowledge about the Operating Systems concepts such as process, main memory management, secondary memory management, CPU and disk scheduling etc</li>
+              <li>Simulation of CPU scheduling algorithms, file allocation strategies, file organization techniques</li>
+              <li>Simulation of Deadlock Avoidance and prevention. Algorithms Simulation of Page replacement algorithms and paging techniques</li>
+              <li>Introduced the student to Unix/Linux kernel programming techniques.</li>
+              <li>Review basic concepts coveredin the core operating Systems course prerequisite as they are realized in the Linux platform.</li>
+            </ul>
+            <h2>Course Outcomes:</h2>
+            <ol>
+              <li>implement various process scheduling programs</li>
+              <li>implement various memory management algorithms.</li>
+              <li>Identify various solutions for critical section problems and also implement different algorithms that are applied in virtual memory .</li>
+              <li>implement various file allocation algorithms</li>
+              <li>Describe and write shell scripts in order to perform basic shell programming.</li>
+            </ol>
+            <h3>Operating Systems</h3>
+            <ol>
+              <li>Simulate the following CPU scheduling algorithms
+                <ul>
+                  <li>Round Robin</li>
+                  <li>SJF</li>
+                  <li>FCFS</li>
+                  <li>Priority</li>
+                </ul>
+              </li>
+              <li>Multiprogramming-Memory management- Implementation of fork (), wait (), exec() and exit (), System calls</li>
+              <li>Simulate the following
+                <ul>
+                  <li>Multiprogramming with a fixed number of tasks (MFT)</li>
+                  <li>Multiprogramming with a variable number of tasks (MVT)</li>
+                </ul>
+              </li>
+              <li>Simulate Bankers Algorithm for Dead Lock Avoidance</li>
+              <li>Simulate Bankers Algorithm for Dead Lock Detection.</li>
+              <li>Simulate the following page replacement algorithms.
+                <ul>
+                  <li>FIFO</li>
+                  <li>LRU</li>
+                  <li>LFU</li>
+                </ul>
+              </li>
+              <li>Simulate the following File allocation strategies
+                <ul>
+                  <li>Sequenced</li>
+                  <li>Indexed</li>
+                  <li>Linked</li>
+                </ul>
+              </li>
+              <li>Write a C program to simulate producer and consumer problem usingsemaphores</li>
+              <li>Write a C program to simulate producer and consumer problem usingsemaphores</li>
+              <li>Write C program to create a thread using pthreads library and let it run its function.</li>
+              <li>Write a C program to illustrate concurrent execution of threads using pthreads library.</li>
+            </ol>
+            <h3>Text Books:</h3>
+            <ol>
+              <li>Operating System -Abraham Silberchatz, Peter B. Galvin, Greg Gagne 7th Edition, John Wiley</li>
+              <li>The ultimate guide unix, Sumitan das.</li>
+            </ol>
+            
+        
+        
+        </div>
+
+
+
+
+          <div class="lab4" style="display: none;">
+            
+            
+            
+            <h2>R-Programming</h2>
+            <h2>Course Objectives:</h2>
+            <p>Students will be able to:</p>
+            <ul>
+              <li>Use R for programming tasks.</li>
+              <li>Extend the functionality of R by using add-on packages.</li>
+              <li>Extract data from files and other sources and perform various data manipulation tasks on them.</li>
+              <li>Code statistical functions in R.</li>
+              <li>Use R Graphics and Tables to visualize results of various statistical operations on data.</li>
+              <li>Apply the knowledge of R gained to data Analytics for real life applications.</li>
+            </ul>
+            <h2>Course Outcomes:</h2>
+            <p>Students will be able to:</p>
+            <ol>
+              <li>Implement the R Programming to the real world situations.</li>
+              <li>Apply suitable statistical and mathematical method to real world problems.</li>
+              <li>Visualize the data sets using suitable methodology.</li>
+              <li>Analyze the data sets to predict the solution of the real world problems in different situations.</li>
+              <li>Interpret the solutions to the real world data sets.</li>
+            </ol>
+            <h2>Module-I: Introduction, How to run R, R Sessions and Functions, Basic Math, Variables, Data Types: Vectors and Conclusion, Advanced Data Structures: Data Frames, Lists and Matrices.</h2>
+            <ol>
+              <li>Write a program to illustrate basic Arithmetic in R</li>
+              <li>Write a program to illustrate operations on a vector in R</li>
+              <li>Write a program to illustrate operations on matrix in R</li>
+              <li>Write a program to illustrate operations on Data Frame</li>
+              <li>Write a program to illustrate operations on List</li>
+            </ol>
+        	<h2>Module-II: R Programming Structures, Control Statements, Loops, If-Else, and Functions</h2>
+	<ol>
+		<li>Write a program to illustrate if-else-else if in R</li>
+		<li>Write a Program to illustrate While and For loops in R</li>
+		<li>Write a program to illustrate Functions in Quick sort implementation in R</li>
+		<li>Write a program to illustrate Function inside function in R</li>
+	</ol>
+    <h2>Module-III: R Programming implementation for basic Mathematics, Probability and Statistical methods, Correlation, Regression and Statistical Distributions</h2>
+    <ol>
+        <li>Write a program to illustrate built-in function for mathematics in R</li>
+        <li>Write a program to illustrate built-in function for probabilities in R</li>
+        <li>Write a program to illustrate built-in function for correlation and regression lines in R</li>
+        <li>Write a program to illustrate built-in function for statistical distributions in R</li>
+    </ol>
+    
+    <h2>Module-IV: Graphics, Creating Graphs, The Workhorse of R Base Graphics, the plot() Function – Customizing Graphs, Saving Graphs to Files. Import the data sets from excel, CSV to visualize the data and applying statistical methods.</h2>
+    <ol>
+        <li>Write a program to illustrate to create graphs and usage of plot() function in R</li>
+        <li>Write a program to illustrate Customising and Saving to Graphs in R</li>
+        <li>Write a program to illustrate the data sets by applying statistical methods</li>
+        <li>Write a program to illustrate the data sets by data visualization</li>
+    </ol>
+    
+    <h3>References:</h3>
+    <ol>
+        <li>Eric Goh Ming Hui, Learn R for Applied Statistics With Data Visualizations, Regressions, and Statistics,Apress,2019.</li>
+        <li>Thomas W. MacFarland, Introduction to Data Analysis and Graphical Presentation in Biostatistics with R,Springer,2014.</li>
+        <li>Peter Dalgaard, Introductory Statistics With R-Springer-Verlag New York,2008.</li>
+        <li>Pierre Lafaye de Micheaux, Rémy Drouilhet, Benoit, The R SoftwareFundamentals of Programming and Statistical Analysis-Springer-Verlag New York, 2013.</li>
+    </ol>
+    
+    
+
+
+
+
+
+    
+        
+        
+        
+        
+    
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h1>About Me</h1>
+    <h2>Hi, I'm Yashwanth Kumar, a student studying Computer Science and Engineering (CSE) in the B section. <br>
+        This website is a project I created to showcase my skills and share my interests with the world.
+        <br> Feel free to contact me if you have any questions or feedback!<h2>
+    <ul>
+      <li><a href="mailto:yashwanthkumar7842@gmail.com">contact me</a></li>
+      
+
+      
+    </ul>
+    <p>&copy; 2023 Yashwanth Kumar</p>
+  </footer>
+  
+  
+  
+ 
+            <script>
+               const s1 = document.getElementById('s1');
+const s2 = document.getElementById('s2');
+const s3 = document.getElementById('s3');
+const s4 = document.getElementById('s4');
+const s5 = document.getElementById('s5');
+const s6 = document.getElementById('s6');
+const s7 = document.getElementById('s7');
+const s8 = document.getElementById('s8');
+const s9 = document.getElementById('s9');
+const coa = document.querySelector('.coa');
+const se = document.querySelector('.se');
+const java = document.querySelector('.Java');
+const os = document.querySelector('.os');
+const ps = document.querySelector('.ps');
+const lab1 = document.querySelector('.lab1');
+const lab2 = document.querySelector('.lab2');
+const lab3 = document.querySelector('.lab3');
+const lab4 = document.querySelector('.lab4');
+
+function hideAll() {
+  coa.style.display = 'none';
+  se.style.display = 'none';
+  java.style.display = 'none';
+  os.style.display = 'none';
+  ps.style.display = 'none';
+  lab1.style.display = 'none';
+  lab2.style.display = 'none';
+  lab3.style.display = 'none';
+  lab4.style.display = 'none';
+}
+
+s1.addEventListener('click', () => {
+  hideAll();
+  coa.style.display = 'block';
+  coa.style.backgroundColor='white';
+  book.classList.add("s1");
+  book.addEventListener('click',()=>{
+                        book.classList.remove("s1");
+                        
+                   
+                    });
+  
+
+  
+});
+
+s2.addEventListener('click', () => {
+  hideAll();
+  se.style.display = 'block';
+  se.style.backgroundColor = 'white';
+  book.classList.add("s2");
+  book.addEventListener('click',()=>{
+                        book.classList.remove("s2");
+                        
+                   
+                    });
+});
+
+s3.addEventListener('click', () => {
+  hideAll();
+  java.style.display = 'block';
+  java.style.backgroundColor='white';
+  book.classList.add("s3");
+  book.addEventListener('click',()=>{
+                        book.classList.remove("s3");
+                        
+                   
+                    });
+});
+
+s4.addEventListener('click', () => {
+  hideAll();
+  os.style.display = 'block';
+  book.classList.add("s4");
+  os.style.backgroundColor='white';
+  book.addEventListener('click',()=>{
+                        book.classList.remove("s4");
+                        
+                   
+                    });
+});
+
+s5.addEventListener('click', () => {
+  hideAll();
+  ps.style.display = 'block';
+  book.classList.add("s5");
+  ps.style.backgroundColor='white';
+  book.addEventListener('click',()=>{
+                        book.classList.remove("s5");
+                        
+                   
+                    });
+});
+
+s6.addEventListener('click', () => {
+  hideAll();
+  lab1.style.display = 'block';
+  book.classList.add("s6");
+  lab1.style.backgroundColor='white';
+  book.addEventListener('click',()=>{
+                        book.classList.remove("s6");
+                        
+                   
+                    });
+});
+
+s7.addEventListener('click', () => {
+  hideAll();
+  lab2.style.display = 'block';
+  lab2.style.backgroundColor='white';
+  book.classList.add("s7");
+  book.addEventListener('click',()=>{
+                        book.classList.remove("s7");
+                        
+                   
+                    });
+});
+
+s8.addEventListener('click', () => {
+  hideAll();
+  lab3.style.display = 'block';
+  lab3.style.backgroundColor='white';
+  book.classList.add("s8");
+  book.addEventListener('click',()=>{
+                        book.classList.remove("s8");
+                        
+                   
+                    });
+});
+
+s9.addEventListener('click', () => {
+  hideAll();
+  lab4.style.display = 'block';
+  lab4.style.backgroundColor='white';
+  book.classList.add("s9");
+  book.addEventListener('click',()=>{
+                        book.classList.remove("s9");
+                        
+                   
+                    });
+});
+
+
+            </script>
+
+    </body>
+</html>
